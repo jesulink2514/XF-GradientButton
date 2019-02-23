@@ -2,13 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DemoGradient"
-             x:Class="DemoGradient.MainPage">
-
+             xmlns:controls="clr-namespace:DemoGradient.Controls;assembly=DemoGradient"
+             x:Class="DemoGradient.MainPage" Padding="30">    
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        
+        <Image Source="bank.png" HorizontalOptions="Center" WidthRequest="100"/>
+
+        <Label Text="Protected money" FontAttributes="Bold" 
+               HorizontalTextAlignment="Center" FontSize="Large"/>
+
+        <Label Text="Don't worry about your money. Techies bank will protect them" 
+               FontSize="14" TextColor="DarkGray"/>
+
+        <controls:GradientButton Text="Get started" BorderRadius="55"
+                                 StartColor="#6C6FEC" EndColor="#5a41b9"
+                                 TextColor="White" HorizontalOptions="FillAndExpand"
+                                 Margin="10"/>
+        <Label Text="I have a card" TextColor="#5154CE" FontSize="16" FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
     </StackLayout>
 
 </ContentPage>
