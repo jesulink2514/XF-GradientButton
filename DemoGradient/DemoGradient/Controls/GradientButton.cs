@@ -76,13 +76,17 @@ namespace DemoGradient.Controls
                 }
             };
 
-            Content = new Grid
+            var container = new Grid
             {
                 Children = {
                     _background,
                     _label
                 }
             };
+
+            CompressedLayout.SetIsHeadless(container, true);
+
+            Content = container;
         }
 
         public Color StartColor
