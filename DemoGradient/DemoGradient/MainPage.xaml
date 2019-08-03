@@ -1,25 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:DemoGradient"
-             xmlns:controls="clr-namespace:DemoGradient.Controls;assembly=DemoGradient"
-             x:Class="DemoGradient.MainPage" Padding="30">    
+<ContentPage
+    x:Class="DemoGradient.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:DemoGradient.Controls;assembly=DemoGradient"
+    xmlns:local="clr-namespace:DemoGradient"
+    Padding="30">
     <StackLayout>
-        
-        <Image Source="bank.png" HorizontalOptions="Center" WidthRequest="100"/>
 
-        <Label Text="Protected money" FontAttributes="Bold" 
-               HorizontalTextAlignment="Center" FontSize="Large"/>
+        <Image
+            HorizontalOptions="Center"
+            Source="bank.png"
+            WidthRequest="100" />
 
-        <Label Text="Don't worry about your money. Techies bank will protect them" 
-               FontSize="14" TextColor="DarkGray"/>
+        <Label
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalTextAlignment="Center"
+            Text="Protected money" />
 
-        <controls:GradientButton Text="Get started" BorderRadius="55"
-                                 StartColor="#6C6FEC" EndColor="#5a41b9"
-                                 TextColor="White" HorizontalOptions="FillAndExpand"
-                                 Margin="10"/>
-        <Label Text="I have a card" TextColor="#5154CE" FontSize="16" FontAttributes="Bold"
-               HorizontalTextAlignment="Center"/>
+        <Label
+            FontSize="14"
+            Text="Don't worry about your money. Techies bank will protect them"
+            TextColor="DarkGray" />
+
+        <controls:GradientButton
+            Margin="10"
+            BorderRadius="20"
+            EndColor="#5a41b9"
+            HorizontalOptions="FillAndExpand"
+            StartColor="#6C6FEC"
+            Text="Get started"
+            TextColor="White" />
+        <Label
+            FontAttributes="Bold"
+            FontSize="16"
+            HorizontalTextAlignment="Center"
+            Text="I have a card"
+            TextColor="#5154CE" />
     </StackLayout>
 
 </ContentPage>
