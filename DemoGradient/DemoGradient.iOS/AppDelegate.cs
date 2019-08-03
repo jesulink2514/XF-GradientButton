@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using NControl.iOS;
 using UIKit;
 
 namespace DemoGradient.iOS
@@ -23,6 +24,7 @@ namespace DemoGradient.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            NControlViewRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
